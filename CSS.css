@@ -1,0 +1,714 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: local("Proxima Nova"), local("Proxima Nova"), url("../../Content/Fonts/Proxima-Nova-Reg.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "Proxima Nova Black";
+    src: url("../../Content/Fonts/Proxima Nova Black.otf");
+}
+
+
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("../../Content/Fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular";
+    /*src: url("Fonts/Proxima Nova Reg.otf");*/
+    src: local("Proxima Nova Regular"), local("Proxima Nova Regular"), url("../../Content/Fonts/Proxima-Nova-Reg.otf") format('opentype');
+}
+
+#imgSIEGMenu {
+    width: 100px;
+    height: 100px
+}
+
+#sistemas_fondo {
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 99;
+    width: 100%;
+    background: url(../images/btn-slide3.png) no-repeat center top;
+    text-align: center !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    height: 40px !important;
+}
+
+#imgSIEGMenu {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.sistemas_btn {
+    width: 144px !important;
+    height: 41px !important;
+    padding: 5px 0px 0 0 !important;
+    margin: 0 auto !important;
+    display: block !important;
+    font: bold 12px/8px Arial, Helvetica, sans-serif !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    border: none !important;
+}
+
+
+
+/******************************/
+/* Para Generar menu del SIEG */
+/******************************/
+
+.menTablCont {
+    width: 100% !important;
+}
+
+    .menTablCont .td {
+        width: 60% !important;
+        height: 98% !important;
+        vertical-align: top !important;
+    }
+
+.menTablList {
+    width: 100% !important;
+}
+
+    .menTablList td {
+        padding-top: 5px !important;
+        width: 100px !important;
+    }
+
+/*.elemSis {
+    padding: 5px 5px 5px 5px;
+    margin: 0 auto;
+    display: block;
+    font: normal 10px/8px Verdana, Arial, Helvetica, sans-serifs;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    border: solid #FEBC92 1px;
+    -moz-border-radius: 10px;
+    -moz-box-shadow: 3px 3px 5px #C6D2E3;
+    box-shadow: -3px 3px 5px #C6D2E3;
+    -ms-border-radius: 10px;
+    background-color: #FFF; 
+}*/
+
+.elemSis {
+    margin: 0 auto !important;
+    display: block;
+    font: normal 11px/10px 'Proxima Nova',Verdana,Arial !important;
+    font-weight: normal !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+    .elemSis:hover {
+        background-color: #D9F2FB !important; /*#FED6BC #006699;
+        */ /*color: #FF6600;*/
+        cursor: pointer !important;
+        /*border: solid #83D8FC 1px;*/
+        -moz-box-shadow: 3px 3px 5px #dedcdc !important;
+        box-shadow: -3px 3px 5px #dedcdc !important;
+    }
+
+    .elemSis div {
+        height: 40px !important;
+    }
+
+    .elemSis a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+
+.elemSis_name {
+    font: bold 90%/90% Arial, Helvetica, sans-serif;
+    color: #CBD7E7;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.sisDetCont {
+    text-align: center !important;
+}
+
+.sisDetImg {
+    height: 50px !important;
+    text-align: center !important;
+}
+
+.sisDetTit1 {
+    font-size: 12px !important;
+    font-family: 'Proxima Nova Bold',Verdana,Arial !important;
+    height: 35px !important;
+    display: none !important;
+}
+
+.sisDetTit2 {
+    padding: 5px 5px 5px 5px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    /*font: normal 10px/13px Verdana, Arial, Helvetica, sans-serifs;*/
+    font-weight: normal !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 250px !important;
+    height: 100% !important;
+    font-size: 12px !important;
+    font-family: 'Proxima Nova Regular',Verdana,Arial !important;
+}
+
+.elemDescrip {
+    text-align: left !important;
+    padding: 5px 10px 5px 10px !important;
+    font-family: 'Proxima Nova Regular',Verdana,Arial !important;
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.elemDescripDet {
+    text-align: left !important;
+    font-weight: normal !important;
+    padding: 0px 5px 0px 5px !important;
+    word-wrap: break-word !important;
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.fadebox {
+    /*display: ;*/
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.6;
+    opacity: .60;
+    filter: alpha(opacity=60);
+}
+
+.overbox {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+    overflow: auto;
+    text-align: center;
+    background-color: #FFF;
+    padding-top: 30px;
+}
+
+img {
+    border: medium none;
+    vertical-align: middle;
+}
+
+.cerrarSis {
+    Font-family: 'Proxima Nova Regular',Verdana,Arial;
+    /*background-image: url(../images/bg_head_logo.png);
+    background-repeat: repeat-x;*/
+    vertical-align: middle;
+    display: block;
+    position: absolute;
+    border: none;
+    z-index: 1004;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    /*height: 47px;*/
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.cerrar_btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#tabla {
+    width: 100%;
+    height: 46px;
+    border: none;
+}
+
+/*#titulo {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px;
+    color: #000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}*/
+
+.titulo_foot {
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: none !important;
+}
+
+#cbtn {
+    display: block;
+    position: absolute;
+    border: none;
+    z-index: 1005;
+    top: 3px;
+    right: 0px;
+    overflow: visible;
+    height: 46px;
+}
+
+#sieg_pant {
+    top: 10%;
+    left: 25%;
+    width: 700px;
+    height: 410px;
+    overflow: visible;
+    vertical-align: middle;
+    position: fixed;
+    border: none;
+    z-index: 1002;
+    background-color: #fff;
+    /*background-color: #EBEFF5;
+    border-color: #EBEFF5;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: 5px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-radius: 10px;
+    -moz-box-shadow: 5px 5px 10px black;
+    box-shadow: -5px 5px 10px black;*/
+}
+
+.stick {
+    display: none;
+    background: #FFFF99;
+    width: 250px;
+    left: 20px;
+    top: 20px;
+    z-index: 1006;
+    position: fixed;
+    -moz-box-shadow: -5px 5px 10px black;
+    box-shadow: -5px 5px 10px black;
+}
+
+.textoN {
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.linkN {
+    font-size: 10px;
+}
+
+#sieg_notic {
+    /*background-image: url(../fuentesSIEGNuevo/images/bg_foo_logo.png);
+    background-repeat: repeat-x;*/
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: #FFF;
+    height: 32px;
+    z-index: 10011;
+    background-color: aliceblue;
+    /*border-top:solid #63a4ff 2px;*/
+}
+
+#imCHIN {
+    width: 60px;
+    top: -19px;
+    left: 100px;
+    position: absolute;
+    z-index: 1022;
+}
+
+#not-cont {
+    text-align: center;
+    position: absolute;
+    overflow: scroll;
+    font-size: 9px;
+    width: 700px;
+    height: 100px;
+}
+
+    #not-cont td {
+        vertical-align: top;
+    }
+
+#titulo1 {
+    height: 35px;
+    padding-top: 5px;
+}
+
+
+.elemGrupo {
+    padding: 2px 4px;
+    display: block;
+    font-size: 10pt;
+    color: #ffffff;
+    font-family: 'Proxima Nova Regular',Verdana,Arial !important;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #00497f;
+    width: 100%;
+    border-radius: 0px 8px 0px 0px;
+}
+
+    .elemGrupo a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+@media screen and (max-width: 530px) {
+    .tituloLogin {
+        font-size: 9pt !important;
+    }
+
+    .tituloLoginResaltado {
+        font-size: 12pt !important;
+    }
+
+    .login-block {
+        float: left;
+        width: 100%;
+        padding: 0px 0;
+    }
+
+    #divLogoYTitulo p {
+        height: 90px;
+        text-align: left;
+        width: 100%;
+       /* background-color: #0262c9;*/
+        color: #FFFFFF;
+        font-size: 10px;
+        font-family: "Proxima Nova Regular" !important;
+    }
+
+    .contenedor-columna {
+        font-size: 9pt;
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .tituloPanelSieg {
+        font: 'Proxima Nova Black',Arial,Helvetica,sans-serif;
+        font-size: 8pt;
+        color: #121414;
+        text-align: center;
+        margin: 10px;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    #titulo1 {
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    #seccionDescripcion {
+        display: none;
+    }
+
+    .menTablCont .td {
+        width: 100%;
+        height: 98%;
+        vertical-align: top;
+    }
+}
+
+
+@media screen and (max-width: 630px) and (min-width: 531px) {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    #divContenedorTabla {
+        width: 100% !important;
+    }
+
+    .login-block {
+        float: left;
+        width: 100%;
+        padding: 0px 0;
+    }
+
+    #ImgGTO {
+        width: 190px;
+        height: 100px;
+    }
+
+    #imgSieg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tituloLogin {
+        font-size: 10pt !important;
+    }
+
+    .tituloLoginResaltado {
+        font-size: 15pt !important;
+    }
+
+    #contenedor {
+        width: 100%;
+    }
+
+    .sieg_pant {
+        text-align: center;
+        top: 2% !important;
+        left: 0% !important;
+        width: 95% !important;
+        height: 100%;
+        overflow: visible;
+        vertical-align: middle;
+        position: fixed;
+    }
+
+    .ui-widget-content {
+        text-align: center;
+        top: 2% !important;
+        left: 0% !important;
+        width: 95% !important;
+        height: 100%;
+        overflow: visible;
+        vertical-align: middle;
+        position: fixed;
+    }
+
+    .tituloPanelSieg {
+        font: 'Proxima Nova Black',Arial,Helvetica,sans-serif;
+        font-size: 8pt;
+        color: #121414;
+        text-align: center;
+        margin: 10px;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    #titulo1 {
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    #seccionDescripcion {
+        display: none;
+    }
+
+    .menTablCont .td {
+        width: 100%;
+        height: 98%;
+        vertical-align: top;
+        height: 374px;
+    }
+}
+body {
+    position:relative;
+}
+
+
+
+/**Nuevo estilo para barra sieg*/
+.ContenedorMenu {
+    position: fixed !important;
+    bottom: 0.5em;
+    right: 0.3em;
+    z-index: 3041;
+}
+
+.menu-toggle {   
+    border-radius: 50%;
+    /*background-color: #2039A1;*/
+    /*box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);*/
+    position: absolute !important;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: table;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3000;
+}
+
+
+#imgSIEGMenu:hover {
+    filter: saturate(190%);
+   
+}
+
+    .menu-toggle .fa {
+        color: #fff !important;
+        font-size: 2em;
+        display: table-cell;
+        vertical-align: middle;
+        transition: 0.4s;
+        z-index: 3000;
+    }
+
+    .menu-toggle.open .fa {
+        /*-webkit-transform: rotate(135deg);
+        transform: rotate(135deg);*/
+    }
+
+.btn-app {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    position: absolute !important;
+    /*background-color: #2039A1;*/
+    color: #fff !important;
+    text-align: center;
+}
+
+    .btn-app .fa {
+        line-height: 2.5em;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .btn-app .fa a{
+        color:#fff;
+        text-decoration:none;
+        vertical-align:central;
+
+    }
+
+.open .btn-app {
+    /*box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);*/
+    display:;
+}
+
+.menu-round {
+    position: absolute!important;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+    .menu-round .btn-app {
+        bottom: 0.25em;
+        right: 0.25em;
+        transition: 0.4s;
+    }
+
+    .menu-round.open .btn-app:nth-of-type(1) {
+        right: 0.5em;
+        bottom: 4.25em;
+        transition-delay: 0.2s;
+    }
+
+    .menu-round.open .btn-app:nth-of-type(2) {
+        right: 3.5em;
+        bottom: 3.5em;
+        transition-delay: 0.1s;
+    }
+
+    .menu-round.open .btn-app:nth-of-type(3) {
+        right: 4.25em;
+        bottom: 0.5em;
+    }
+
+.menu-line {
+    position: absolute!important;
+    z-index: 2;
+    display:none;
+}
+
+    .menu-line.open {
+        position: absolute!important;
+        z-index: 2;
+        display: block;
+        transition-delay: 0.1s;
+    }
+    .menu-line .btn-app {
+        bottom: 0;
+        right: 0.0em;
+        transition: 0.3s;
+        transition-delay: 0.5s;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(1) {
+        bottom: 6.25em;
+       
+    }
+
+    /*.menu-line.open .btn-app:nth-of-type(1) {
+            bottom: 7.25em;
+        }*/
+
+    .menu-line.open .btn-app:nth-of-type(2) {
+        bottom: 10.25em;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(3) {
+        bottom: 14.25em;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(4) {
+        bottom: 18.25em;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(5) {
+        bottom: 19.25em;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(6) {
+        bottom: 22.25em;
+    }
+
+    .menu-line.open .btn-app:nth-of-type(7) {
+        bottom: 25.25em;
+    }
